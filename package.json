@@ -1,7 +1,7 @@
 {
   "name": "reason-native-base",
   "version": "2.13.14",
-  "repository": "https://github.com/mduthilleul/reason-native-base.git",
+  "repository": "https://github.com/alltonp/reason-native-base.git",
   "license": "MIT",
   "keywords": [
     "reason",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "bs-platform": "^5.0.4",
-    "reason-react": "^0.9.0",
+    "reason-react": "^0.7.0",
     "reason-react-native": "^0.63.0"
   },
   "peerDependencies": {
