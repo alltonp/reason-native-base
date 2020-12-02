@@ -95,7 +95,7 @@ external make:
     ~onScroll: TextInput.scrollEvent => unit=?,
     ~onSelectionChange: TextInput.selectionChangeEvent => unit=?,
     ~onSubmitEditing: TextInput.editingEvent => unit=?,
-    ~onTextInput: TextInput.textInputEvent => unit=?,
+    //    ~onTextInput: TextInput.textInputEvent => unit=?,
     ~placeholder: string=?,
     ~placeholderTextColor: Color.t=?,
     ~returnKeyLabel: string=?,
