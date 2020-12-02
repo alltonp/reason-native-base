@@ -17,7 +17,8 @@ external make:
                        | `words
                        | `sentences
                        | `none
-                     ]=?,
+                     ]
+                       =?,
     ~autoComplete: [@bs.string] [
                      | `off
                      | `username
@@ -32,7 +33,8 @@ external make:
                      | [@bs.as "cc-exp"] `ccExp
                      | [@bs.as "cc-exp-month"] `ccExpMonth
                      | [@bs.as "cc-exp-year"] `ccExpYear
-                   ]=?,
+                   ]
+                     =?,
     ~autoCorrect: bool=?,
     ~autoFocus: bool=?,
     ~blurOnSubmit: bool=?,
@@ -42,7 +44,8 @@ external make:
                         | [@bs.as "while-editing"] `whileEditing
                         | [@bs.as "unless-editing"] `unlessEditing
                         | `always
-                      ]=?,
+                      ]
+                        =?,
     ~clearTextOnFocus: bool=?,
     ~contextMenuHidden: bool=?,
     ~dataDetectorTypes: array(TextInput.DataDetectorTypes.t)=?,
@@ -56,11 +59,12 @@ external make:
                              | `noExcludeDescendants
                              | `yes
                              | `yesExcludeDescendants
-                           ]=?,
+                           ]
+                             =?,
     ~inlineImageLeft: string=?,
     ~inlineImagePadding: float=?,
     ~inputAccessoryViewID: string=?,
-    ~keyboardAppearance: [@bs.string] [ `default | `light | `dark]=?,
+    ~keyboardAppearance: [@bs.string] [ | `default | `light | `dark]=?,
     ~keyboardType: [@bs.string] [
                      | `default
                      | [@bs.as "number-pad"] `numberPad
@@ -76,7 +80,8 @@ external make:
                      | `twitter
                      | [@bs.as "web-search"] `webSearch
                      | [@bs.as "visible-password"] `visiblePassword
-                   ]=?,
+                   ]
+                     =?,
     ~maxFontSizeMultiplier: float=?,
     ~maxLength: int=?,
     ~multiline: bool=?,
@@ -109,7 +114,8 @@ external make:
                       | `join
                       | `route
                       | `yahoo
-                    ]=?,
+                    ]
+                      =?,
     ~rejectResponderTermination: bool=?,
     ~scrollEnabled: bool=?,
     ~secureTextEntry: bool=?,
@@ -118,7 +124,7 @@ external make:
     ~selectionState: 'documentSelectionState=?, // TODO
     ~selectTextOnFocus: bool=?,
     ~spellCheck: bool=?,
-    ~textBreakStrategy: [@bs.string] [ `balanced | `highQuality | `simple]=?,
+    ~textBreakStrategy: [@bs.string] [ | `balanced | `highQuality | `simple]=?,
     ~textContentType: [@bs.string] [
                         | `none
                         | `URL
@@ -148,7 +154,8 @@ external make:
                         | `password
                         | `newPassword
                         | `oneTimeCode
-                      ]=?,
+                      ]
+                        =?,
     ~underlineColorAndroid: Color.t=?,
     ~value: string=?,
     // View props
@@ -157,12 +164,13 @@ external make:
                                    | `button
                                    | `radiobutton_checked
                                    | `radiobutton_unchecked
-                                 ]=?,
+                                 ]
+                                   =?,
     ~accessibilityElementsHidden: bool=?,
     ~accessibilityHint: string=?,
     ~accessibilityIgnoresInvertColors: bool=?,
     ~accessibilityLabel: string=?,
-    ~accessibilityLiveRegion: [@bs.string] [ `none | `polite | `assertive]=?,
+    ~accessibilityLiveRegion: [@bs.string] [ | `none | `polite | `assertive]=?,
     ~accessibilityRole: [@bs.string] [
                           | `none
                           | `button
@@ -175,9 +183,10 @@ external make:
                           | `header
                           | `summary
                           | `imagebutton
-                        ]=?,
-    ~accessibilityStates: array(AccessibilityState.t)=?,
-    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
+                        ]
+                          =?,
+    //    ~accessibilityStates: array(AccessibilityState.t)=?,
+    //    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
     ~accessibilityViewIsModal: bool=?,
     ~accessible: bool=?,
     ~collapsable: bool=?,
@@ -188,7 +197,8 @@ external make:
                                   | `no
                                   | [@bs.as "no-hide-descendants"]
                                     `no_hide_descendants
-                                ]=?,
+                                ]
+                                  =?,
     ~nativeID: string=?,
     ~needsOffscreenAlphaCompositing: bool=?,
     ~onAccessibilityEscape: unit => unit=?,
@@ -213,7 +223,8 @@ external make:
                       | `none
                       | [@bs.as "box-none"] `box_none
                       | [@bs.as "box-only"] `box_only
-                    ]=?,
+                    ]
+                      =?,
     ~removeClippedSubviews: bool=?,
     ~renderToHardwareTextureAndroid: bool=?,
     ~shouldRasterizeIOS: bool=?,
@@ -222,4 +233,5 @@ external make:
     // Children
     ~children: React.element=?
   ) =>
-  React.element = "Input";
+  React.element =
+  "Input";

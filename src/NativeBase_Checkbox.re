@@ -6,7 +6,7 @@ external make:
   (
     ~ref: ref=?,
     ~checked: bool=?,
-		~color: string=?,
+    ~color: string=?,
     // TouchableOpacity props
     ~activeOpacity: float=?,
     ~focusedOpacity: float=?,
@@ -20,7 +20,8 @@ external make:
                                    | `button
                                    | `radiobutton_checked
                                    | `radiobutton_unchecked
-                                 ]=?,
+                                 ]
+                                   =?,
     ~accessibilityHint: string=?,
     ~accessibilityIgnoresInvertColors: bool=?,
     ~accessibilityLabel: string=?,
@@ -36,9 +37,10 @@ external make:
                           | `header
                           | `summary
                           | `imagebutton
-                        ]=?,
-    ~accessibilityStates: array(AccessibilityState.t)=?,
-    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
+                        ]
+                          =?,
+    //    ~accessibilityStates: array(AccessibilityState.t)=?,
+    //    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
     ~delayLongPress: int=?,
     ~delayPressIn: int=?,
     ~delayPressOut: int=?,
@@ -53,4 +55,5 @@ external make:
     ~testID: string=?,
     ~children: React.element=?
   ) =>
-  React.element = "Checkbox";
+  React.element =
+  "Checkbox";

@@ -17,12 +17,13 @@ external make:
                                    | `button
                                    | `radiobutton_checked
                                    | `radiobutton_unchecked
-                                 ]=?,
+                                 ]
+                                   =?,
     ~accessibilityElementsHidden: bool=?,
     ~accessibilityHint: string=?,
     ~accessibilityIgnoresInvertColors: bool=?,
     ~accessibilityLabel: string=?,
-    ~accessibilityLiveRegion: [@bs.string] [ `none | `polite | `assertive]=?,
+    ~accessibilityLiveRegion: [@bs.string] [ | `none | `polite | `assertive]=?,
     ~accessibilityRole: [@bs.string] [
                           | `none
                           | `button
@@ -35,9 +36,10 @@ external make:
                           | `header
                           | `summary
                           | `imagebutton
-                        ]=?,
-    ~accessibilityStates: array(AccessibilityState.t)=?,
-    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
+                        ]
+                          =?,
+    //    ~accessibilityStates: array(AccessibilityState.t)=?,
+    //    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
     ~accessibilityViewIsModal: bool=?,
     ~accessible: bool=?,
     ~collapsable: bool=?,
@@ -48,7 +50,8 @@ external make:
                                   | `no
                                   | [@bs.as "no-hide-descendants"]
                                     `no_hide_descendants
-                                ]=?,
+                                ]
+                                  =?,
     ~nativeID: string=?,
     ~needsOffscreenAlphaCompositing: bool=?,
     ~onAccessibilityEscape: unit => unit=?,
@@ -73,7 +76,8 @@ external make:
                       | `none
                       | [@bs.as "box-none"] `box_none
                       | [@bs.as "box-only"] `box_only
-                    ]=?,
+                    ]
+                      =?,
     ~removeClippedSubviews: bool=?,
     ~renderToHardwareTextureAndroid: bool=?,
     ~shouldRasterizeIOS: bool=?,
@@ -82,4 +86,5 @@ external make:
     // Children
     ~children: React.element=?
   ) =>
-  React.element = "Spinner";
+  React.element =
+  "Spinner";
