@@ -48,7 +48,7 @@ external make:
                         =?,
     ~clearTextOnFocus: bool=?,
     ~contextMenuHidden: bool=?,
-    ~dataDetectorTypes: array(TextInput.DataDetectorTypes.t)=?,
+    //    ~dataDetectorTypes: array(TextInput.DataDetectorTypes.t)=?,
     ~defaultValue: string=?,
     ~disableFullscreenUI: bool=?,
     ~editable: bool=?,
