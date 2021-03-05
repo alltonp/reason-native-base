@@ -9,7 +9,7 @@ external make:
     // ActivityIndicator props
     ~animating: bool=?,
     ~color: Color.t=?,
-    ~size: ActivityIndicator.Size.t=?,
+    //    ~size: ActivityIndicator.Size.t=?,
     ~hidesWhenStopped: bool=?,
     // View props
     ~accessibilityComponentType: [@bs.string] [
