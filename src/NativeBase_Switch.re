@@ -4,8 +4,7 @@ include NativeElement;
 type trackColor;
 [@bs.obj]
 external trackColor:
-  (~_true: Color.t=?, ~_false: Color.t=?, unit) => trackColor =
-  "";
+  (~_true: Color.t=?, ~_false: Color.t=?, unit) => trackColor;
 
 [@react.component] [@bs.module "native-base"]
 external make:
@@ -47,7 +46,6 @@ external make:
                         ]
                           =?,
     //    ~accessibilityStates: array(AccessibilityState.t)=?,
-    //    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
     ~accessibilityViewIsModal: bool=?,
     ~accessible: bool=?,
     ~collapsable: bool=?,

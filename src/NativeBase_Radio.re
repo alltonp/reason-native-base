@@ -42,7 +42,6 @@ external make:
                         ]
                           =?,
     //    ~accessibilityStates: array(AccessibilityState.t)=?,
-    //    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
     ~delayLongPress: int=?,
     ~delayPressIn: int=?,
     ~delayPressOut: int=?,
